@@ -1,9 +1,13 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+
+import { HttpClientModule } from "@angular/common/http";
+
 // Rutas
 import { AppRoutingModule } from './app-routing.module';
 
-
+// Services
+import { FirebaseService } from "./services/firebase.service";
 
 // Componentes
 import { AppComponent } from './app.component';
@@ -28,9 +32,10 @@ import { HomeComponent } from './components/home/home.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [FirebaseService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
