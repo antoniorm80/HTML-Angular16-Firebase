@@ -18,8 +18,7 @@ export class FirebaseService {
 
   public carga_info() {
     this.http.get("assets/data/info.pages.json")
-    .subscribe( data => {
-      // console.log(data);
+    .subscribe( data => {      
       this.info = data;
       this.cargada = true;      
     });
@@ -27,9 +26,7 @@ export class FirebaseService {
 
   public carga_sobre_nosotros(){
     this.http.get("https://portafolio-3227a-default-rtdb.firebaseio.com/Equipo.json")
-    .subscribe( data => {
-       console.log(data);
-      // this.equipo = JSON.stringify(data);
+    .subscribe( data => {             
       this.equipo = data;
       this.cargada_sobre_nosotros = true;      
     });
