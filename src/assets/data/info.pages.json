@@ -1,11 +1,12 @@
 {
-    "titulo": "Portafolia",
+    "titulo": "Portafolio",
     "email": "ariverarm80@gmail.com",
     "nombre": "Antonio Rivera",
     "desarrollado": "BeUniqueCorp",
-    "pagina_autor": "TeSANA",
+    "pagina_autor": "http://beuniquecorp.com/",
+    "sitio": "http://beuniquecorp.com/",
     "facebook": "https://www.facebook.com/ariverarm79/",
-    "instagram": "TeSANA",
-    "twitter": "TeSANA",
+    "instagram": "https://www.instagram.com/antoniorm80/",
+    "twitter": "https://twitter.com/antoniorm80",
     "equipo_trabajo": []
 }
