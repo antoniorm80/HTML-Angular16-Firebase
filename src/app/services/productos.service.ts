@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Producto } from '../interfaces/producto.interface';
-import { Observable } from 'rxjs';
 
 
 @Injectable({
@@ -26,7 +25,10 @@ export class ProductosService {
         this.productos = respuesta;
         this.cargando = false; 
       });
+  }
 
+  getProdutcto(id: string) {
+    return this.http.get(this.urlApi + `Productos/${id}.json`);    
   }
 
 }

@@ -6,7 +6,8 @@ Viernes, 08-03-2024
 2.- Checar lo del API del Mapa en el código. 
 3.- Subir a SiteGround. --> Done 
 4.- Modificar la estructura del proyecto según el curos de Udemy.
-
+5.- Mover el loagina a un componente independiente y pasarla las propiedads por props.
+6.- Arreglar el Mapa.
 
 
 

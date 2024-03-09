@@ -13,7 +13,7 @@ const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch:"full", title:'Home'},
   {path: 'home', component: HomeComponent, title:'Home'},  
   {path: 'portafolio', component: PortafolioComponent, title:'Portafolio'},  
-  {path: 'producto', component: ProductoComponent, title: 'Producto'},
+  {path: 'producto/:id', component: ProductoComponent, title: 'Producto'},
   {path: 'about', component: AboutComponent, title: 'Acerca'},
   {path: 'contacto', component: ContactoComponent, title: 'Contacto'},
   {path: '**', redirectTo: 'home', pathMatch:'full'}
