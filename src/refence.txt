@@ -5,6 +5,8 @@ Viernes, 08-03-2024
 1.- Registrar el firebase. --> Done 
 2.- Checar lo del API del Mapa en el código. 
 3.- Subir a SiteGround. --> Done 
+4.- Modificar la estructura del proyecto según el curos de Udemy.
+
 
 
 
