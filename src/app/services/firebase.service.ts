@@ -24,8 +24,8 @@ export class FirebaseService {
     });
   }
 
-  public carga_sobre_nosotros(){
-    this.http.get("https://portafolio-3227a-default-rtdb.firebaseio.com/Equipo.json")
+  public async carga_sobre_nosotros(){
+    await this.http.get("https://portafolio-3227a-default-rtdb.firebaseio.com/Equipo.json")
     .subscribe( data => {             
       this.equipo = data;
       this.cargada_sobre_nosotros = true;      

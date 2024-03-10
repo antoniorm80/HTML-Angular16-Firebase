@@ -14,7 +14,6 @@ export class ProductosService {
   productoFiltrado: Producto[] = [];
 
   constructor(private http: HttpClient) { 
-
     this.cargarProductos();
   }
 
@@ -22,8 +21,8 @@ export class ProductosService {
    cargarProductos() {
     return new Promise(  ( resolve, reject ) => {
       this.http.get('https://angular-html-25cf9.firebaseio.com/productos_idx.json')
-          .subscribe( (resp: any) => {
-            this.productos = resp;
+          .subscribe( async(resp: any) => {
+            this.productos = await resp;
             this.cargando = false;
             resolve(resp);
           });
