@@ -11,18 +11,17 @@ import { ProductoDescripcion } from "./../../interfaces/producto.descripcion.int
 export class ProductoComponent implements OnInit{
 
   producto!: ProductoDescripcion;
+  id!: string;
 
   constructor(private route: ActivatedRoute, public _pS: ProductosService){}
 
   ngOnInit(): void {
     this.route.params
-      .subscribe( parametros => {
-        // console.log(parametros['id']);
-        this._pS.getProdutcto(parametros['id'])
+      .subscribe( parametros => {        
+        this._pS.getProducto(parametros['id'])
           .subscribe( (producto: any) => {
-            this.producto = producto;
-            console.log(producto);
-            
+            this.id = parametros['id'];
+            this.producto = producto;         
           });
       });
   }

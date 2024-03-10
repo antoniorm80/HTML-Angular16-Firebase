@@ -19,6 +19,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 import { ContactoComponent } from './components/contacto/contacto.component';
 import { HomeComponent } from './components/home/home.component';
 import { ItemComponent } from './pages/item/item.component';
+import { SearchComponent } from './pages/search/search.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ItemComponent } from './pages/item/item.component';
     ProductoComponent,
     ContactoComponent,
     HomeComponent,
-    ItemComponent
+    ItemComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

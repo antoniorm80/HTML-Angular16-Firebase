@@ -8,12 +8,14 @@ import {
   AboutComponent, 
   ContactoComponent
  } from "./components/index.paginas";
+import { SearchComponent } from './pages/search/search.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'home', pathMatch:"full", title:'Home'},
   {path: 'home', component: HomeComponent, title:'Home'},  
   {path: 'portafolio', component: PortafolioComponent, title:'Portafolio'},  
   {path: 'producto/:id', component: ProductoComponent, title: 'Producto'},
+  {path: 'search/:termino', component: SearchComponent, title: 'Busqueda'},
   {path: 'about', component: AboutComponent, title: 'Acerca'},
   {path: 'contacto', component: ContactoComponent, title: 'Contacto'},
   {path: '**', redirectTo: 'home', pathMatch:'full'}
