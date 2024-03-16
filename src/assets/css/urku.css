@@ -1612,6 +1612,11 @@ body {
 .post-6 {
   background-image: url("../img/post-6.jpg");
 }
+
+.post-10 {
+  background-image: url("../img/post-10.jpg");
+}
+
 @media (min-width: 40em) {
   #layout-grid:checked ~ .rk-blog .post-6 {
     background-position: center right;
